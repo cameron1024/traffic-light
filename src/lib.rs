@@ -22,13 +22,11 @@ impl TrafficLight {
     /// let traffic_light = TrafficLight::new();
     /// ```
     pub fn new() -> Self {
-        let s = Self {
+        Self {
             red: false,
             orange: false,
             green: false,
-        };
-        s.print();
-        s
+        }
     }
 
     /// Returns `true` if the red light is active, and `false` otherwise
