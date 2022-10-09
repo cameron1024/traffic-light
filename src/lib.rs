@@ -7,7 +7,7 @@ pub fn wait(seconds: u64) {
     std::thread::sleep(Duration::from_secs(seconds));
 }
 
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone)]
 pub struct TrafficLight {
     red: bool,
     orange: bool,
